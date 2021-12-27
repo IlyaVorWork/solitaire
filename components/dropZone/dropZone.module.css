@@ -1,0 +1,11 @@
+.column{
+    width: 250px;
+    height: 450px;
+    background-color: violet;
+    margin-right: 25px;
+    position: relative;
+}
+
+.start{
+    background-color: yellow;
+}
