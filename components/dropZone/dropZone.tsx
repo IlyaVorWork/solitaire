@@ -7,9 +7,7 @@ import styles from "../dropZone/dropZone.module.css"
 
 const DropZone:FunctionComponent<ColumnProps> = ({id, items, listLength, listIndex}) => {
 
-    const currentStyle = id == "1" ? clsx(styles.column, styles.start) : styles.column
-
-    console.log(listLength)
+    const isStartDeck = id == "1"
 
     return(
         <Droppable droppableId={id}>
@@ -18,7 +16,10 @@ const DropZone:FunctionComponent<ColumnProps> = ({id, items, listLength, listInd
                     <div 
                         {...provided.droppableProps}
                         ref={provided.innerRef}
-                        className={currentStyle}
+                        className={clsx({
+                            [styles.column]: true, 
+                            [styles.start]: isStartDeck,
+                        })}
                     >
                         {items.map((card, index) => <CardElement card={card} index={index} selfLength={items.length} allLength={listLength} key={card.id} ownerIndex={listIndex}/>)}
                         {provided.placeholder}

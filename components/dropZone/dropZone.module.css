@@ -3,9 +3,12 @@
     height: 450px;
     background-color: violet;
     margin-right: 25px;
+    margin-bottom: 25px;
     position: relative;
+    /*top: 500px;*/
 }
 
 .start{
     background-color: yellow;
+    /*top: 0;*/
 }

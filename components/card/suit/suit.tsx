@@ -1,8 +1,8 @@
 import { FunctionComponent } from "react"
-import { CardProps, SuitProps } from "../../interfaces"
-import styles from '../card/card.module.css'
+import { SuitProps } from "../../../interfaces"
+import styles from '../card.module.css'
 import { mdiCardsSpade, mdiCardsClub, mdiCardsDiamond, mdiCardsHeart } from '@mdi/js'
-import { suit } from "../../types"
+import { suit } from "../../../types"
 
 const Suit:FunctionComponent<SuitProps> = ({suit, color}) => {
 
