@@ -29,13 +29,67 @@ export const createDeck = () => {
     return tempDeck
 }
 
-export const createField = (deck:Card[]) => {
+export const createColumns = (partDeck:Card[]) => {
 
-    let columnsList:Column[] = []
+    let columnsList:Column[] = [
+        {
+            id: '1',
+            items: [partDeck[27]],
+        },
+        {
+            id: '2',
+            items: partDeck.slice(25,27),
+        }, 
+        {
+            id: '3',
+            items: partDeck.slice(22,25),
+        }, 
+        {
+            id: '4',
+            items: partDeck.slice(18,22),
+        }, 
+        {
+            id: '5',
+            items: partDeck.slice(13,18),
+        }, 
+        {
+            id: '6',
+            items: partDeck.slice(7,13),
+        }, 
+        {
+            id: '7',
+            items: partDeck.slice(0,7),
+        }, 
+    ]
 
-    for (let i = 1; i < 4; i++) {
-        i == 1 ? columnsList.push(new Column(i.toString(), deck)) : columnsList.push(new Column(i.toString(), []))
-    }
+    return columnsList
+
+}
+
+export const createDeckAndStacks = (deck:Card[]) => {
+
+    let columnsList:Column[] = [
+        {
+            id: 'deck',
+            items: deck,
+        },
+        {
+            id: 'diamond',
+            items: [],
+        }, 
+        {
+            id: 'heart',
+            items: [],
+        }, 
+        {
+            id: 'club',
+            items: [],
+        }, 
+        {
+            id: 'spade',
+            items: [],
+        }, 
+    ]
 
     return columnsList
 }

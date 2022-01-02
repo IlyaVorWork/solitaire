@@ -1,3 +1,4 @@
+import { DraggingStyle, NotDraggingStyle } from "react-beautiful-dnd"
 import { Column } from "./classes"
 
 export type suit = "diamond" | "heart" | "club" | "spade"
@@ -9,3 +10,5 @@ export type color = "red" | "black"
 export type Columns = {[index: string]:Column}
 
 export type ListLength = number[]
+
+export type AnimationStyles = DraggingStyle | NotDraggingStyle | undefined

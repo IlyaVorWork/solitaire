@@ -1,31 +1,32 @@
 .card{
-    width: 150px;
-    height: calc(150px * 1.4285);
+    width: 112.5px;
+    height: calc(112.5px * 1.4285);
     border: 1px solid black;
-    font-size: 50px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: white;
     position: absolute;
-    left: 50px;
+    left: 37.5px;
 }
 
 .locked{
     transform: none !important;
 }
 
-.shadow{
-    box-shadow: 0px 5px 5px 7px rgba(34, 60, 80, 0.3);
+.cardback{
+    background-color: green;
 }
 
-.captured{
-    cursor: pointer;
-    display: none;
-}
 
 .suit{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

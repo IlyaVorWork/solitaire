@@ -1,5 +1,14 @@
 .container{
   display: flex;
+  flex-direction: column;
+}
+
+.box{
+  width: 1462.5px;
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+}
+
+.upperBox{
+  justify-content: flex-end;
 }

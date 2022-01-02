@@ -1,12 +1,13 @@
+import { Dispatch, SetStateAction } from "react";
 import { Card } from "./classes"
-import { color, suit } from "./types";
+import { color, Columns, suit } from "./types";
 
 export interface CardProps {
     card: Card
     index: number
     selfLength: number
     allLength: number[]
-    ownerIndex: number
+    ownerIndex: string
 }
 
 export interface SuitProps {
@@ -18,5 +19,10 @@ export interface ColumnProps {
     id: string
     items: Card[]
     listLength: number[]
-    listIndex: number
+    listIndex: string
+}
+
+export interface StartDeckProps extends ColumnProps{
+    gameField: Columns
+    setGameField: Dispatch<SetStateAction<Columns>>
 }
