@@ -1,13 +1,12 @@
-.column{
-    width: 187.5px;
-    height: 287.5px;
-    background-color: violet;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    position: relative;
-    /*top: 500px;*/
+.column {
+  width: 187.5px;
+  height: 287.5px;
+  background-color: violet;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  position: relative;
 }
 
-.column:last-child{
-    margin-right: 0;
+.column:last-child {
+  margin-right: 0;
 }

@@ -1,25 +1,14 @@
 import { FunctionComponent } from "react"
 import { SuitProps } from "../../../interfaces"
-import styles from '../card.module.css'
-import { mdiCardsSpade, mdiCardsClub, mdiCardsDiamond, mdiCardsHeart } from '@mdi/js'
-import { suit } from "../../../types"
+import styles from "../card.module.css"
 
-const Suit:FunctionComponent<SuitProps> = ({suit, color}) => {
-
-    function suitIconPath(suit:suit) {
-        switch(suit){
-            case 'heart': return mdiCardsHeart;
-            case 'diamond': return mdiCardsDiamond;
-            case 'club': return mdiCardsClub;
-            case 'spade': return mdiCardsSpade;
-        }
-    }
-
-    return(
-        <svg className={styles.suit} viewBox="0 0 24 24">
-            <path fill={color} d={suitIconPath(suit)} />
-        </svg>
-    )
+const Suit: FunctionComponent<SuitProps> = ({ suit, color, rank }) => {
+  return (
+    <div className={styles.suit}>
+      <img src={`/${rank}_${color}.png`} className={styles.icon} />
+      <img src={`/${suit}.png`} className={styles.icon} />
+    </div>
+  )
 }
 
 export default Suit

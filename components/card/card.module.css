@@ -1,32 +1,37 @@
-.card{
-    width: 112.5px;
-    height: calc(112.5px * 1.4285);
-    border: 1px solid black;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: white;
-    position: absolute;
-    left: 37.5px;
+.card {
+  width: 112.5px;
+  height: calc(112.5px * 1.4285);
+  border: 1px solid black;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+  position: absolute;
+  left: 37.5px;
 }
 
-.locked{
-    transform: none !important;
+.locked {
+  transform: none !important;
 }
 
-.cardback{
-    background-color: green;
+.cardback {
+  background-color: green;
 }
 
-
-.suit{
-    width: 30px;
-    height: 30px;
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.text{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.suit {
+  width: 100%;
+  padding: 5px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 30px;
 }

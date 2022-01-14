@@ -1,11 +1,11 @@
-.column{
-    width: 187.5px;
-    height: 287.5px;
-    background-color: yellow;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    position: relative;
-    align-self: flex-start;
-    margin-right: auto;
-    /*top: 500px;*/
+.column {
+  width: 187.5px;
+  height: 287.5px;
+  background-color: yellow;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  position: relative;
+  align-self: flex-start;
+  margin-right: auto;
+  /*top: 500px;*/
 }

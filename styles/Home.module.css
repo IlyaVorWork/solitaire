@@ -1,14 +1,14 @@
-.container{
+.container {
   display: flex;
   flex-direction: column;
 }
 
-.box{
+.box {
   width: 1462.5px;
   display: flex;
   flex-direction: row;
 }
 
-.upperBox{
+.upperBox {
   justify-content: flex-end;
 }
